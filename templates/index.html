@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple webapp</title>
+    </head>
+    <body>
+        <h1>Hello, Client</h1>
+        <form action="/">
+            <div class="form-example">
+                <label for="name">Enter URL: </label>
+                <input type="url" name="name"/>
+                <input type = "submit"/>
+            </div>
+        </form>
+        <p>
+            server info
+            {{ serverInfo }}
+            <br>
+            client info
+            {{ ClientInfo }}
+        </p>
+    </body>
+</html>

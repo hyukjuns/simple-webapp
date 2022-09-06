@@ -3,7 +3,7 @@ Client와 Server 정보를 출력해주는 간단한 웹앱 입니다.
 
 ### Python setup
 가상환경 세팅 후 필요한 패키지 설치
-1. Setup .vent
+1. Setup .venv
     ```
     python -m venv .venv
     source .venv/bin/activate
