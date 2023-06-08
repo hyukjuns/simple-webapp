@@ -15,13 +15,6 @@
     </style>
 </head>
 <body>
-    <h1>Client Request Header:</h1>
-    <pre>
-        {% for key, value in client_request_header %}
-            {{ key }}: {{ value }}<br>
-        {% endfor %}
-    </pre>
-
     <h1>Server Information:</h1>
     <pre>
         {% for key, value in server_info.items() %}
@@ -29,7 +22,14 @@
         {% endfor %}
     </pre>
 
-    <h1>Response Headers:</h1>
+    <h1>Client Request Header:</h1>
+    <pre>
+        {% for key, value in client_request_header %}
+            {{ key }}: {{ value }}<br>
+        {% endfor %}
+    </pre>
+
+    <h1>Server Response Headers:</h1>
     <pre>
         {% for key, value in response_headers.items() %}
             {{ key }}: {{ value }}<br>
